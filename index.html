@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+</head>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+
+            <h1 class="text-[37px] text-[#271966] font-[700]">Country list</h1>
+            <input class="search" type="text" placeholder="search">
+
+            <div class="flex gap-[15px]">
+                <button  class=" flex pt-[15px] items-center justify-center"><img class="w-[30px] h-30px heart" src="./images/heart-1.svg" alt="heart"></button>
+                <button  class=" flex items-center justify-center"><img class="w-[50px] h-50px save" src="./images/save-3.svg" alt="heart"></button>
+                <button   class=" flex items-center justify-center dark-body"><img class="w-[50px] h-50px" src="./images/dark.svg" alt="heart"></button>
+            </div>
+
+
+        </header>
+        <main>
+           
+
+        </main>
+
+
+        <ul class="list">
+
+        </ul>
+    </div>
+
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                }
+            }
+        }
+    }
+</script>
+<script src="./js/app.js"></script>
+
+</html>

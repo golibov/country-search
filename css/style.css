@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1400px;
+}
+body {
+    background-image: url("../images/bacground.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.user-item{
+    width: 380px;
+    height: 480px;
+    border-radius: 25px;
+   
+    padding: 5px;
+    border: 5px solid #182933;
+    background-color: rgba(24, 41, 51, 0.199);
+}
+.user-item:hover{
+    border: 5px solid #271966;
+    backdrop-filter: blur(40px);
+    background-color: rgba(24, 41, 51, 0.664);
+    
+}
+.user-item:hover ~ body {
+    background-color: rgba(240, 240, 240, 0.863); /* body fon rangini xiralashtiradi */
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+button {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #2a1455;
+    border-radius: 50%;
+    display: flex;
+}
+button img {
+    padding-top: 5px;
+    width: 40px;
+    height: 40px;
+}
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 20px;
+    color: white;
+}
+.flag {
+    margin: 0 auto;
+    width: 200px;
+    height: 250px;
+  
+    
+}
+p {
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+    padding-left: 20px;
+    color: white;
+}
+.search {
+    margin-bottom: 30px;
+    margin-left: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: #182933;
+    color: white;
+}
+
+.save {
+    width: 33px;
+    height: 33px;
+    color: white;
+}
+.wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-top: 10px;
+    gap: 10px;
+}
+.heart{
+    margin-bottom:  20px;
+}
