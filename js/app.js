@@ -84,19 +84,19 @@ function render(arr) {
         userItem.classList.add("user-item");
         let wrapper = document.createElement("div")
         wrapper.classList.add("wrapper")
-        
+
         let heartIcon = document.createElement('img')
         heartIcon.className = 'w-[35px] h-[35px] heart'
         heartIcon.src = '../images/heart-1.svg'
-        
+
         let saveIcon = document.createElement('img')
         saveIcon.className = 'w-[30px] h-[30px]'
         saveIcon.src = '../images/save-3.svg'
-        
+
         let deleteIcon = document.createElement('img')
         deleteIcon.className = 'w-[30px] h-[30px] delete-icon'
         deleteIcon.src = '../images/delete.svg'
-        
+
         userItem.innerHTML = `
             <img class=" flag w-[100px] h-[100px]" src=${item.flag} alt="flag" width="500px">
             <h1> name: ${item.name}</h1>
@@ -109,9 +109,9 @@ function render(arr) {
         userItem.appendChild(wrapper);
         wrapper.append(heartIcon, saveIcon, deleteIcon);
 
-       
+
         deleteIcon.addEventListener('click', function () {
-            userItem.remove(); 
+            userItem.remove();
         });
     })
 }
@@ -128,11 +128,12 @@ search.addEventListener("keyup", function (evt) {
 
 
 
-const button = document.querySelector('.dark-body');
-button.addEventListener('click', () => {
+const darkButton = document.querySelector('.dark-body');
+darkButton.addEventListener('click', () => {
     document.body.style.backgroundImage = 'url(../images/bg-img-blue.jpg)';
     document.body.style.backgroundSize = 'cover';
     document.body.style.backgroundRepeat = 'no-repeat';
     document.body.style.backgroundPosition = 'center';
-    
+
+
 });

@@ -24,20 +24,18 @@ body {
     grid-column-gap: 30px;
     grid-row-gap: 30px;
 }
-.user-item{
+.user-item {
     width: 380px;
     height: 480px;
     border-radius: 25px;
-   
     padding: 5px;
     border: 5px solid #182933;
     background-color: rgba(24, 41, 51, 0.199);
 }
-.user-item:hover{
+.user-item:hover {
     border: 5px solid #271966;
     backdrop-filter: blur(40px);
     background-color: rgba(24, 41, 51, 0.664);
-    
 }
 .user-item:hover ~ body {
     background-color: rgba(240, 240, 240, 0.863); /* body fon rangini xiralashtiradi */
@@ -69,8 +67,6 @@ h1 {
     margin: 0 auto;
     width: 200px;
     height: 250px;
-  
-    
 }
 p {
     font-size: 20px;
@@ -85,7 +81,7 @@ p {
     font-size: 20px;
     border: none;
     background-color: #182933;
-    color: white;
+    color: blue;
 }
 
 .save {
@@ -93,7 +89,7 @@ p {
     height: 33px;
     color: white;
 }
-.wrapper{
+.wrapper {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -101,6 +97,6 @@ p {
     padding-top: 10px;
     gap: 10px;
 }
-.heart{
-    margin-bottom:  20px;
+.heart {
+    margin-bottom: 20px;
 }
