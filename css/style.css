@@ -26,7 +26,7 @@ body {
 }
 .user-item {
     width: 380px;
-    height: 480px;
+    height: 320px;
     border-radius: 25px;
     padding: 5px;
     border: 5px solid #182933;
@@ -67,6 +67,7 @@ h1 {
     margin: 0 auto;
     width: 200px;
     height: 250px;
+    transition: transform 0.5s ease-in-out;
 }
 p {
     font-size: 20px;
@@ -99,4 +100,52 @@ p {
 }
 .heart {
     margin-bottom: 20px;
+}
+.modal-title , .modal-flag , .modal-capital , .modal-population , .modal-id {
+    color:white;
+}
+h3:hover{
+    cursor: pointer;
+}
+.modal-content{
+    border: 1px solid greenyellow;
+    color: white;
+    transition: all 0.5s ease-in-out;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.close-button{
+    border: none;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    align-items: flex-start;
+    margin-left: 400px;
+   
+}
+.close-button:hover{
+    box-shadow: rgba(230, 227, 227, 0.35) 0px 3px 3px;
+}
+.close-button img{
+    width: 30px;
+    height: 30px;
+}
+.close-button:active{
+    box-shadow: rgba(230, 227, 227, 0.35) 0px 3px 3px;
+}
+
+
+.flag:hover {
+    animation: spinX 2s linear infinite;
+}
+
+@keyframes spinX {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
 }
